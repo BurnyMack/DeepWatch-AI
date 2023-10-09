@@ -10,7 +10,7 @@ To provide cybersecurity teams the ability to create possible detections in the 
 
 The system from a high level perspective is divided into the following components:
 
-* bots - numerous crawlers of data feeds to consume data.
+* collectors- numerous crawlers of data feeds to consume data.
 * normaliser - normalisers ingest data from bots in real time and parse them into a SCHEMA.
 * analysers - consumes normalised data andcorrelates events and indicators using AI.
 * workers - shift data through workflows, read and write from databases, maintain and update the system.
@@ -19,7 +19,7 @@ The system from a high level perspective is divided into the following component
 
 The systems tech stack likely changes as the POC progresses and capabilities and features are updated.
 
-[MySQL Database ](https://dev.mysql.com/downloads/mysql/)
+[MongoDB](https://learn.mongodb.com/learning-paths/using-mongodb-with-python?_ga=2.179144166.354275378.1696858985-712848114.1696858985)
 
 [Compute](https://www.digitalocean.com/?refcode=e8a7842ff717https://www.digitalocean.com/?refcode=e8a7842ff717) (Digital Ocean Droplet)
 
