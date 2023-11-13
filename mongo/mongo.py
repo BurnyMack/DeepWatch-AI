@@ -33,20 +33,3 @@ def main():
         collectiondata = db[collectionname]
         dataquery = query(collectiondata)
 main()
- 
-
-
-
-
-
-'''
-def add_data(collection, data):
-    data_added = collection.insert_one(data)
-    print("Inserted document ID:", data_added.inserted_id)
-
-
-
-def disconnect(client, database):
-    client.close()
-    print('Disconnected from: ',database )
-'''
