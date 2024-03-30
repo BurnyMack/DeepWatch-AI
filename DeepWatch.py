@@ -5,18 +5,20 @@ import pymsteams
 import json
 
 # Load and preprocess your datasets
-df1 = pd.read_csv('dataset1.csv')
-df2 = pd.read_csv('dataset2.csv')
+df1 = pd.read_csv("dataset1.csv")
+df2 = pd.read_csv("dataset2.csv")
 
 # Compare and correlate the datasets
 # You'll need to implement your specific correlation logic here
 
 # Mock correlation results for demonstration
-correlated_data = [{"data_point": "abc", "correlation_score": 0.85},
-                   {"data_point": "xyz", "correlation_score": 0.72}]
+correlated_data = [
+    {"data_point": "abc", "correlation_score": 0.85},
+    {"data_point": "xyz", "correlation_score": 0.72},
+]
 
 # Initialize a Microsoft Teams message
-message = pymsteams.connectorcard('YOUR_TEAMS_WEBHOOK_URL')
+message = pymsteams.connectorcard("YOUR_TEAMS_WEBHOOK_URL")
 
 # Create a message card
 message.title("Correlation Results")
@@ -39,9 +41,8 @@ user_feedback = ["accurate", "inaccurate"]
 updated_model = train_model_with_feedback(df1, df2, user_feedback)
 
 # Store the updated model for future use
-with open('updated_model.pkl', 'wb') as model_file:
+with open("updated_model.pkl", "wb") as model_file:
     pickle.dump(updated_model, model_file)
-
 
 
 class APIClient:
@@ -62,16 +63,17 @@ class APIClient:
     def close_session(self):
         self.session.close()
 
+
 # Usage example
 if __name__ == "__main__":
-    base_url = 'https://api.example.com'
-    username = 'your_username'
-    password = 'your_password'
+    base_url = "https://api.example.com"
+    username = "your_username"
+    password = "your_password"
 
     client = APIClient(base_url, username, password)
 
     try:
-        response = client.make_get_request('endpoint_path')
+        response = client.make_get_request("endpoint_path")
         if response.status_code == 200:
             data = response.json()
             # Process the data as needed

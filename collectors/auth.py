@@ -1,5 +1,6 @@
 import requests
 
+
 class APIClient:
     def __init__(self, base_url, username, password):
         self.base_url = base_url
@@ -18,16 +19,17 @@ class APIClient:
     def close_session(self):
         self.session.close()
 
+
 # Usage example
 if __name__ == "__main__":
-    base_url = 'https://api.example.com'
-    username = 'your_username'
-    password = 'your_password'
+    base_url = "https://api.example.com"
+    username = "your_username"
+    password = "your_password"
 
     client = APIClient(base_url, username, password)
 
     try:
-        response = client.make_get_request('endpoint_path')
+        response = client.make_get_request("endpoint_path")
         if response.status_code == 200:
             data = response.json()
             # Process the data as needed
