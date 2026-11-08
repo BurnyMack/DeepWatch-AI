@@ -29,5 +29,5 @@ The systems tech stack likely changes as the POC progresses and capabilities and
 
 # Design
 
-![image](https://github.com/BurnyMack/deepwatch-ai/assets/58530324/8a8b8468-53b4-42b7-8a06-3496295d4f22)
+![image](https://github.com/BurnyMack/DeepWatch-AI/assets/58530324/8a8b8468-53b4-42b7-8a06-3496295d4f22)
 
